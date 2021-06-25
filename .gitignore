@@ -1,0 +1,60 @@
+# compiled output
+/dist
+/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+*static/checkout/*
+*static/dashboard/*
+!static/checkout/development/index.html
+!static/checkout/development/index.sample.html
+!static/checkout/staging/index.html
+!static/checkout/staging/index.sample.html
+!static/checkout/production/index.html
+!static/checkout/production/index.sample.html
+!static/checkout/sandbox/index.html
+!static/checkout/sandbox/index.sample.html
+!static/dashboard/staging/index.html
+!static/dashboard/development/index.html
+!static/dashboard/sandbox/index.html
+!static/dashboard/production/index.html
+!static/dashboard/public/*
+
+*.ovpn
+.vscode/settings.json
+
+# NPM lock
+package-lock.json 
+
+
+# CDK
+cdk.out
