@@ -1,18 +1,19 @@
 import {
   Entity,
   PrimaryGeneratedColumn,
-  Column,
-  OneToOne,
+  ManyToOne,
   JoinColumn,
+  OneToMany,
+  OneToOne,
 } from "typeorm";
-import { Users } from "./User";
+import { Person } from "./Person ";
 
 @Entity()
 export class Dog {
   @PrimaryGeneratedColumn("increment", { type: "bigint" })
   id: number;
 
-  @OneToOne(() => Users)
+  @OneToOne(() => Person)
   @JoinColumn()
-  users: Users;
+  owner: Person;
 }
